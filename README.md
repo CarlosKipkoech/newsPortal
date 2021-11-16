@@ -26,7 +26,7 @@ REST API for a news portal application
 
 #### Type
 > "Gradle run"
-* Use <b>postman</b>, use localhost url to navigate different routes accordingly either using post and get to test the api.
+* Use <b>postman</b, use localhost url to navigate different routes accordingly either using post and get to test the api.
 
 
 ### Usage
