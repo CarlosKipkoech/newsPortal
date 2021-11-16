@@ -11,7 +11,7 @@ REST API for a news portal application
 > POSTGRES \
 >Spark \
 > Gradle\
->JUnit\
+>JUnit
 >Postman
 
 ### SetUp :
