@@ -33,7 +33,7 @@ REST API for a news portal application
 Execute HTTP verbs e.g POST, GET etc
 
 #### Support and Contact Details
-My Email [Carlos](Carlos598798@gmail.com).
+My Email [Carlos Kipkoech](Carlos598798@gmail.com).
 
 #### Contributing
 Reach out for any project contributions to the project.
