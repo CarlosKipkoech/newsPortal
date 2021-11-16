@@ -7,10 +7,10 @@ import static org.junit.Assert.assertTrue;
 
 public class NewsTest {
     private News setUpNews() {
-        return new News("manchester losses","drury");
+        return new News("manchester looses","drury");
     }
     @Test
-    public void newuserInstantiatesCorrectly_true() throws Exception {
+    public void newsInstantiatesCorrectly_true() throws Exception {
         News testNews = setUpNews();
         assertTrue(true);
     }
@@ -18,32 +18,22 @@ public class NewsTest {
 
 
     @Test
-    public void newuser_getsName_String() throws Exception {
+    public void newNews_getsName_String() throws Exception {
         News testNews = setUpNews();
-        assertEquals("john",testUser.getName());
+        assertEquals("manchester looses",testNews.getContent());
     }
 
     @Test
-    public void getAge__getsDescription_manager() throws Exception {
+    public void getAuthor__getsDescription_drury() throws Exception {
         News testNews = setUpNews();
-        assertEquals("manager", testUser.getRole());
+        assertEquals("drury", testNews.getAuthor());
     }
-
-    @Test
-    public void getPower_getsNumberofemployees_String() throws Exception{
-        News testNews = setUpNews();
-        assertEquals(5, testUser.getDepartmentId());
-    }
-
-
-
-
 
 
 
     @Test
     public void getId_userInstantiatesWithAnId_0() {
         News testNews = setUpNews();
-        assertEquals(0,testUser.getId());
+        assertEquals(0,testNews.getId());
     }
 }
