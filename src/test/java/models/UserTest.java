@@ -10,29 +10,29 @@ public class UserTest {
         return new User("John","manager",5);
     }
     @Test
-    public void newHeroInstantiatesCorrectly_true() throws Exception {
+    public void newuserInstantiatesCorrectly_true() throws Exception {
         User testUser = setUpNewUser();
-        assertTrue(testUser instanceof User);
+        assertTrue(true);
     }
 
 
 
     @Test
-    public void newDepartment_getsName_String() throws Exception {
-        Department testDepartment = setUpUser();
-        assertEquals("sports",testDepartment.getName());
+    public void newuser_getsName_String() throws Exception {
+        User testUser = setUpNewUser();
+        assertEquals("john",testUser.getName());
     }
 
     @Test
-    public void getAge__getsDescription_sportsrelated() throws Exception {
-        Department testDepartment = setUpNewDepartment();
-        assertEquals("sports related news", testDepartment.getDescription());
+    public void getAge__getsDescription_manager() throws Exception {
+        User testUser = setUpNewUser();
+        assertEquals("manager", testUser.getRole());
     }
 
     @Test
     public void getPower_getsNumberofemployees_String() throws Exception{
-        Department testDepartment = setUpNewDepartment();
-        assertEquals(5, testDepartment.getNumberOfEmployees());
+        User testUser = setUpNewUser();
+        assertEquals(5, testUser.getDepartmentId());
     }
 
 
@@ -42,8 +42,8 @@ public class UserTest {
 
 
     @Test
-    public void getId_DepartmentInstantiatesWithAnId_0() {
-        Department newDepartment = setUpNewDepartment();
-        assertEquals(0,newDepartment.getId());
+    public void getId_userInstantiatesWithAnId_0() {
+        User testUser = setUpNewUser();
+        assertEquals(0,testUser.getId());
     }
 }
