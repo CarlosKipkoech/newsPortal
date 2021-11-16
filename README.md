@@ -19,9 +19,9 @@ REST API for a news portal application
 * Clone repository
 * Locally in terminal setup the database as follows;
 * Alter your password and username to get connection to database
-> $ psql < drop.sql
-> 
-> $ psql < create.sql
+> $psql < create.sql 
+>  
+> $psql < drop.sql
 * open another terminal Go to this directory -> org-api
 
 #### Type
