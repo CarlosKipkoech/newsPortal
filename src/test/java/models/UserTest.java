@@ -2,23 +2,24 @@ package models;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
-public class DepartmentTest {
-    private Department setUpNewDepartment() {
-        return new Department("sports","sports related news",5);
+public class UserTest {
+    private User setUpNewUser() {
+        return new User("John","manager",5);
     }
     @Test
     public void newHeroInstantiatesCorrectly_true() throws Exception {
-        Department testDepartment = setUpNewDepartment();
-        assertTrue(testDepartment instanceof Department);
+        User testUser = setUpNewUser();
+        assertTrue(testUser instanceof User);
     }
 
 
 
     @Test
     public void newDepartment_getsName_String() throws Exception {
-        Department testDepartment = setUpNewDepartment();
+        Department testDepartment = setUpUser();
         assertEquals("sports",testDepartment.getName());
     }
 
@@ -45,5 +46,4 @@ public class DepartmentTest {
         Department newDepartment = setUpNewDepartment();
         assertEquals(0,newDepartment.getId());
     }
-
 }
