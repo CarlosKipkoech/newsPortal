@@ -16,7 +16,7 @@ REST API for a news portal application
 
 ### SetUp :
 
-* Clone repository
+* Clone repositor
 * Locally in terminal setup the database as follows;
 * Alter your password and username to get connection to database
 > $psql < create.sql 
