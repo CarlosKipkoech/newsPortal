@@ -36,7 +36,7 @@ Execute HTTP verbs e.g POST, GET etc
 My Email [Carlos](Carlos598798@gmail.com).
 
 #### Contributing
-Reach out for any addition to the project.
+Reach out for any project contributions to the project.
 
 ### Copyright and License
 > Copyright 2021
