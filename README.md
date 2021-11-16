@@ -30,7 +30,7 @@ REST API for a news portal application
 
 
 ### Usage
-Execute HTTP verbs e.g POST, GET etc
+Execute HTTP verbs e.g POS, GET etc
 
 #### Support and Contact Details
 My Email [Carlos](Carlos598798@gmail.com).
