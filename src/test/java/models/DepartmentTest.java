@@ -17,98 +17,33 @@ public class DepartmentTest {
 
 
     @Test
-    public void newHero_getsName_String() throws Exception {
-        Hero testHero = setUpNewHero();
-        assertEquals("Spider",testHero.getName());
+    public void newDepartment_getsName_String() throws Exception {
+        Department testDepartment = setUpNewDepartment();
+        assertEquals("sports",testDepartment.getName());
     }
 
     @Test
-    public void getAge__getsHeroAge_17() throws Exception {
-        Hero testHero = setUpNewHero();
-        assertEquals(17,testHero.getAge());
+    public void getAge__getsDescription_sportsrelated() throws Exception {
+        Department testDepartment = setUpNewDepartment();
+        assertEquals("sports related news", testDepartment.getDescription());
     }
 
     @Test
-    public void getPower_getsHeroPower_String() throws Exception{
-        Hero testHero = setUpNewHero();
-        assertEquals("hoping",testHero.getPower());
+    public void getPower_getsNumberofemployees_String() throws Exception{
+        Department testDepartment = setUpNewDepartment();
+        assertEquals(5, testDepartment.getNumberOfEmployees());
     }
 
-    @Test
-    public void getWeakness_getsHeroWeakness_String() throws Exception{
-        Hero testHero = setUpNewHero();
-        assertEquals("water",testHero.getWeakness());
-    }
 
-    @Test
-    public void getAll_returnsAllHeroes_true() throws Exception {
-        Hero newHero = setUpNewHero();
-        Hero otherHero = new Hero("",8,"","");
-        assertEquals(2,Hero.getAll().size());
-    }
 
-    @Test
-    public void getAll_containsAllHeroes_true() throws Exception{
-        Hero newHero = setUpNewHero();
-        Hero otherHero = new Hero("",4,"","");
-        assertTrue(Hero.getAll().contains(newHero));
-        assertTrue(Hero.getAll().contains(otherHero));
-    }
+
+
+
 
     @Test
     public void getId_heroInstantiatesWithAnId_1() {
-        Hero newHero = setUpNewHero();
-        assertEquals(1,newHero.getId());
+        Department newDepartment = setUpNewDepartment();
+        assertEquals(0,newDepartment.getId());
     }
 
-    @Test
-    public void findById_returnsCorrectHero_true() {
-        Hero newHero = setUpNewHero();
-        assertEquals(1, Hero.findById(newHero.getId()).getId());
-    }
-
-    @Test
-    public void findById_returnsCorrectHeroWhenThereExistMoreThanOne_true() {
-        Hero newHero = setUpNewHero();
-        Hero otherHero = new Hero("",9,"","");
-        assertEquals(2,Hero.findById(otherHero.getId()).getId());
-    }
-
-    @Test
-    public void update_changesHeroDetails_true () {
-        Hero newHero = setUpNewHero();
-        String formerName = newHero.getName();
-        int formerAge = newHero.getAge();
-        String formerPower = newHero.getPower();
-        String formerWeakness = newHero.getWeakness();
-        int formerId = newHero.getId();
-
-        newHero.update("Bat",6,"night","mask");
-
-        assertEquals(formerId,newHero.getId());
-        assertNotEquals(formerName,newHero.getName());
-        assertNotEquals(formerAge,newHero.getAge());
-        assertNotEquals(formerPower,newHero.getPower());
-        assertNotEquals(formerWeakness,newHero.getWeakness());
-
-    }
-
-    @Test
-    public void delete_deletesASpecificHero_true() {
-        Hero newHero = setUpNewHero();
-        Hero otherHero = new Hero("",8,"","");
-        newHero.delete();
-        assertEquals(1,Hero.getAll().size());
-        assertEquals(2,Hero.getAll().get(0).getId());
-    }
-
-    @Test
-    public void deleteAll_deletesAllHeroes_true() {
-        Hero newHero = setUpNewHero();
-        Hero otherHero = new Hero("",7,"","");
-
-        Hero.clearAll();
-        assertEquals(0,Hero.getAll().size());
-
-    }
 }
